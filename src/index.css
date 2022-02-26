@@ -10,3 +10,8 @@ code {
   --secondary: #4e4e4e;
   --error: #e96666;
 }
+
+body {
+  padding-left: 5rem;
+  padding-right: 5rem;
+}
