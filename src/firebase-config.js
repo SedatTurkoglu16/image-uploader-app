@@ -1,7 +1,7 @@
 import * as firebase from "firebase/app";
 import 'firebase/firestore'
 import 'firebase/storage'
-
+ 
 const firebaseConfig = {
     apiKey: "AIzaSyB1ZessoVi1EScy892gcdVojudaQ03o1Mw",
     authDomain: "evernote-clone-d91b8.firebaseapp.com",
@@ -14,4 +14,5 @@ const firebaseConfig = {
   firebase.initializeApp(firebaseConfig);
 
   export const projectStorage = firebase.storage();
-  export const projectFireStorage = firebase.firestore();
+  export const projectFireStore = firebase.firestore();
+  export const timestamp = firebase.firestore.FieldValue.serverTimestamp;
